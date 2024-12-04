@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenken</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #6de3f3;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Judul Halaman */
+        .title {
+            text-align: center;
+            font-size: 48px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Login Menu */
+        .login {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            background-color: #24e62b;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        /* Menu Horizontal (Tracking, SLA, Monitor Super) */
+        .horizontal-menu {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .horizontal-menu div {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        /* Menu Vertikal (Informasi Scan, Cabang, Alur) */
+        .vertical-menu {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        .vertical-menu div {
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: #fff;
+            cursor: pointer;
+        }
+
+        /* Menu ALL Template */
+        .all-template {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            border: 2px solid #333;
+            border-radius: 5px;
+            background-color: #108aee;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        /* Form Login (ID dan Password) */
+        .login-form {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .login-form input {
+            padding: 8px;
+            font-size: 16px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 2px solid #333;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Judul -->
+        <div class="title">KENKEN TEKS</div>
+
+        <!-- Login -->
+        <div class="login" onclick="showLoginForm()">LOGIN</div>
+
+        <!-- Form Login (ID dan Password) -->
+        <div class="login-form" id="loginForm">
+            <div>
+                <label for="userID">ID: </label>
+                <input type="text" id="userID" placeholder="Masukkan ID">
+            </div>
+            <div>
+                <label for="userPassword">Password: </label>
+                <input type="password" id="userPassword" placeholder="Masukkan Password">
+            </div>
+        </div>
+
+        <!-- Menu Horizontal (Tracking, SLA, Monitor Super) -->
+        <div class="horizontal-menu">
+            <div>Tracking</div>
+            <div>SLA</div>
+            <div>Monitor Super</div>
+        </div>
+
+        <!-- Menu Vertikal (Informasi Scan, Cabang, Alur) -->
+        <div class="vertical-menu">
+            <div>Informasi Scan</div>
+            <div>Informasi Cabang</div>
+            <div>Informasi Alur</div>
+        </div>
+
+        <!-- Menu ALL Template -->
+        <div class="all-template">ALL TAMPLATE</div>
+    </div>
+
+    <script>
+        // Fungsi untuk menampilkan form login
+        function showLoginForm() {
+            var form = document.getElementById("loginForm");
+            form.style.display = "block"; // Menampilkan form login
+        }
+    </script>
+
+</body>
+</html>
